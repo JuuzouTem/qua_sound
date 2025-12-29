@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qua Sound | Quantum Audio Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="quantumCanvas"></canvas>
+    <div id="overlay">
+        <div class="overlay-content">
+            <h1>QUA_SOUND</h1>
+            <p>Kuantum Süperpozisyonunu Hisset</p>
+            <button id="startButton">Deneyimi Başlat</button>
+        </div>
+    </div>
+    <div class="player-container">
+        <div class="track-info">
+            <h2 id="trackTitle">Parça Seçiniz</h2>
+            <p id="trackStatus">Beklemede...</p>
+        </div>
+        <div class="controls">
+            <button id="prevBtn" class="ctrl-btn">⏮</button>
+            <button id="playPauseBtn" class="ctrl-btn play">▶</button>
+            <button id="nextBtn" class="ctrl-btn">⏭</button>
+        </div>
+        <div class="progress-container" id="progressContainer">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <div class="playlist" id="playlist">
+        </div>
+    </div>
+    <audio id="audioPlayer" crossorigin="anonymous"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
